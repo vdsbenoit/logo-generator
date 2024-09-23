@@ -1,8 +1,7 @@
 <template>
   <div class="h-svh w-screen bg-white">
-    <div id="capture" class="justify-left flex h-[132px] w-[320px] items-center rounded bg-neutral-900">
-      <img class="inline-block h-full p-4" src="@/assets/logo.png" />
-      <p class="text-4xl font-bold text-neutral-100">frite.dev</p>
+    <div id="capture" class="flex h-fit w-fit items-center justify-center rounded-full bg-neutral-900">
+      <img class="p-16" src="@/assets/logo.png" />
     </div>
     <button class="mt-10 rounded bg-gray-300 px-2 py-1" @click="captureAndSave">
       Export as PNG
