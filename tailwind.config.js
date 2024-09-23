@@ -1,9 +1,8 @@
-import type { Config } from "tailwindcss"
+/** @type {import('tailwindcss').Config} */
 import defaultTheme from "tailwindcss/defaultTheme"
 import forms from "@tailwindcss/forms"
 
-export default <Partial<Config>>{
-  plugins: [forms],
+export default {
   content: ["./src/**/*.{html,js,vue}"],
   theme: {
     extend: {},
@@ -11,4 +10,6 @@ export default <Partial<Config>>{
       sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
     },
   },
+  plugins: [forms],
 }
+

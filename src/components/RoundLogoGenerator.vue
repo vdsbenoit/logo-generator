@@ -1,7 +1,8 @@
 <template>
   <div class="h-svh w-screen bg-white">
-    <div id="capture" class="flex h-fit w-fit items-center justify-center rounded-full bg-neutral-900">
-      <img class="p-16" src="@/assets/logo.png" />
+    <div id="capture" class="flex h-[132px] w-[320px] items-center bg-neutral-900">
+      <img class="h-5/6 ml-3 p-4" src="@/assets/logo.png" />
+      <p class="text-4xl font-bold text-neutral-100">frite.dev</p>
     </div>
     <button class="mt-10 rounded bg-gray-300 px-2 py-1" @click="captureAndSave">
       Export as PNG
@@ -11,7 +12,7 @@
 
 <script lang="ts" setup>
 import { nextTick } from "vue"
-import html2canvas from "html2canvas"
+import { toPng } from "html-to-image"
 import { saveAs } from "file-saver"
 
 const captureAndSave = async () => {
@@ -22,23 +23,15 @@ const captureAndSave = async () => {
     if (!element) {
       throw new Error("Element not found")
     }
-    const canvas = await html2canvas(element, {
-      // scale: 1, // Increase resolution
-      useCORS: false, // If you have cross-origin images
-      logging: true, // For debugging
-    })
-
-    canvas.toBlob((blob) => {
-      if (blob) {
-        saveAs(blob, "new-logo.png")
-      } else {
-        console.error("Failed to create blob from canvas")
-      }
-    })
+    const dataUrl = await toPng(element)
+    const blob = await (await fetch(dataUrl)).blob()
+    saveAs(blob, "new-logo.png")
   } catch (error) {
-    console.error("Failed to capture and save image:", error)
+    console.error("Error capturing and saving image:", error)
   }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Add any additional styles here */
+</style>
