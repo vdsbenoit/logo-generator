@@ -1,5 +1,7 @@
 <template>
   <div class="h-svh w-screen bg-white">
+    <!-- Full dark -->
+
     <div
       id="logo-full-dark"
       class="flex h-[132px] w-[320px] items-center justify-center bg-neutral-900"
@@ -17,8 +19,10 @@
       Export as PNG
     </button>
 
+    <!-- Full light -->
+
     <div class="h-[132px] w-[320px] ring-1 ring-black">
-      <div id="logo-full-light" class="flex h-full w-full items-center justify-center">
+      <div id="logo-full-light" class="flex h-full w-full items-center justify-center bg-white">
         <div class="h-[60%] rounded-full bg-neutral-900 p-3">
           <img class="size-full" src="@/assets/logo.png" />
         </div>
@@ -32,6 +36,8 @@
     >
       Export as PNG
     </button>
+
+    <!-- Round -->
 
     <div
       id="logo-round"
