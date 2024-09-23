@@ -1,9 +1,9 @@
 <template>
   <main>
-<p>Hello world</p>
+    <RoundLogoGenerator />
   </main>
 </template>
 <script setup lang="ts">
+import RoundLogoGenerator from "./components/RoundLogoGenerator.vue"
 </script>
-<style scoped>
-</style>
+<style scoped></style>

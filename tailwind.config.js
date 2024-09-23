@@ -4,7 +4,7 @@ import forms from "@tailwindcss/forms"
 
 export default {
   plugins: [forms],
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,vue}"],
   theme: {
     extend: {},
   },
