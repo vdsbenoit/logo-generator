@@ -1,10 +1,10 @@
 <template>
   <div class="h-svh w-screen bg-white">
-    <div id="capture" class="flex h-[132px] w-[320px] items-center justify-center  border-black">
-      <div class="h-[60%] rounded-full bg-neutral-900 p-3">
+    <div id="capture" class="flex h-[132px] w-[320px] items-center justify-center bg-neutral-900">
+      <div class="h-[60%] rounded-full">
         <img class="size-full" src="@/assets/logo.png" />
       </div>
-      <p class="text-[2.7rem] ml-4 font-bold text-neutral-900">frite.dev</p>
+      <p class="ml-4 text-[2.7rem] font-bold text-neutral-100">frite.dev</p>
     </div>
 
     <button class="ml-4 mt-10 rounded bg-gray-300 px-2 py-1 font-semibold" @click="captureAndSave">
