@@ -4,7 +4,8 @@
 
     <div
       id="logo-full-dark"
-      class="flex h-[132px] w-[320px] items-center justify-center bg-neutral-900"
+      class="flex h-[132px] w-[320px] items-center justify-center"
+      style="background: radial-gradient(ellipse at bottom, #262626 0%, #0a0a0a 100%)"
     >
       <div class="h-[60%] rounded-full">
         <img class="size-full" src="@/assets/logo.png" />
@@ -23,10 +24,13 @@
 
     <div class="h-[132px] w-[320px] ring-1 ring-black">
       <div id="logo-full-light" class="flex h-full w-full items-center justify-center bg-white">
-        <div class="h-[60%] rounded-full bg-neutral-900 p-3">
+        <div
+          class="h-[60%] rounded-full p-3"
+          style="background: radial-gradient(ellipse at bottom, #171717 0%, #0a0a0a 100%)"
+        >
           <img class="size-full" src="@/assets/logo.png" />
         </div>
-        <p class="ml-4 text-[2.7rem] font-bold text-neutral-900">frite.dev</p>
+        <p class="ml-4 text-[2.7rem] font-bold text-neutral-950">frite.dev</p>
       </div>
     </div>
 
@@ -41,7 +45,8 @@
 
     <div
       id="logo-round"
-      class="flex h-fit w-fit items-center justify-center rounded-full bg-neutral-900"
+      class="flex h-fit w-fit items-center justify-center rounded-full"
+      style="background: radial-gradient(ellipse at bottom, #171717 0%, #0a0a0a 100%)"
     >
       <img class="p-16" src="@/assets/logo.png" />
     </div>
