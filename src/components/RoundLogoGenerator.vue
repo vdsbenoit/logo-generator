@@ -4,6 +4,8 @@
       Export all
     </button>
 
+    <!-- NOTE: I use a x5 zoom for the medium exports  -->
+
     <!-- Full dark -->
 
     <div class="mt-5 grid grid-cols-2">
