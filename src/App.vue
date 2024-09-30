@@ -1,9 +1,11 @@
 <template>
   <main>
-    <RoundLogoGenerator />
+    <!-- <LogoGenerator /> -->
+    <LinkedinLogo />
   </main>
 </template>
 <script setup lang="ts">
-import RoundLogoGenerator from "./components/RoundLogoGenerator.vue"
+import LinkedinLogo from "./components/LinkedinLogo.vue"
+import LogoGenerator from "./components/LogoGenerator.vue"
 </script>
 <style scoped></style>
