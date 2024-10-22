@@ -68,27 +68,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Round -->
-
-    <div class="mt-5 grid grid-cols-2">
-      <div
-        id="logo-round"
-        class="flex h-fit w-fit items-center justify-center rounded-full"
-        style="background: radial-gradient(ellipse at bottom, #171717 0%, #0a0a0a 100%)"
-      >
-        <img class="p-16" src="@/assets/logo.png" />
-      </div>
-
-      <div class="flex items-center">
-        <button
-          class="ml-4 rounded bg-gray-300 px-2 py-1 font-semibold"
-          @click="captureAndSave('logo-round')"
-        >
-          Export logo-round
-        </button>
-      </div>
-    </div>
   </div>
 </template>
 

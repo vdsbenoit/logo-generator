@@ -85,6 +85,7 @@ interface StarLayer {
 
 // Constants & Variables
 
+// width and height from the linkedin cover image
 const WIDTH = 1584
 const HEIGHT = 396
 const START_DENSITY = 1
