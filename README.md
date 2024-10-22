@@ -1,3 +1,14 @@
-# Vue + Tailwind playground
+# Logo generator
 
-I use this project as a playground for my Vue & Tailwind experiments
+I use this playground project to generate my logos. 
+
+## Use
+
+- Clone the repo
+- Run `npm run dev`
+- Open local server url in browser (usually http://localhost:5173)
+
+## Tech stack
+- Vue 
+- TypeScript
+- Tailwind
